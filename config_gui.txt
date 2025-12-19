@@ -1,0 +1,10 @@
+%{
+Конфигурация графического интерфейса.
+%}
+
+set window_width = 0o1440
+set window_height = 0o1000
+set theme_color = @"DarkBlue"
+set font_scale = 0o2
+set padding = ^{ window_width window_height + 0o62 mod }
+set layout_settings = (list @"fixed" (list 0o10 0o20))

@@ -1,0 +1,10 @@
+%{
+Конфигурация учебного веб-сервера.
+%}
+
+set default_port = 0o10000 
+set server_name = @"MyLocalServer"
+set base_timeout = 0o36
+set retry_count = 0o5
+set max_wait_time = ^{ base_timeout retry_count * 0o12 + }
+set allowed_methods = (list @"GET" @"POST" @"HEAD")
